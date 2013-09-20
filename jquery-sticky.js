@@ -1,5 +1,5 @@
 /* 
- *   jQuery Sticky Plugin 1.0
+ *   jQuery Sticky Plugin 1.0.0
  *   https://github.com/garethdn/jquery-sticky
  *
  *   Copyright 2013, Bruno Tarmann & Gareth Nolan

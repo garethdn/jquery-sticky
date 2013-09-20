@@ -1,0 +1,24 @@
+{
+    "name": "simple-sticky",
+    "title": "jQuery Sticky",
+    "description": "A jQuery plugin to easily add functionality to fix elements to the top of the page on scroll.",
+    "keywords": [
+        "jquery",
+        "sticky",
+        "scroll",
+        "position"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Bruno Tarmann & Gareth Nolan"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/garethdn/jquery-sticky/blob/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.9.1"
+    }
+}
