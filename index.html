@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body, html {
+                padding:0;
+                margin:0;
+                font-family: sans-serif;
+            }
+
+            .page-hd {
+                padding:15px;
+            }
+
+            .page-bd {
+                padding:15px;
+                background-color: red;
+                height:1000px;
+            }
+
+            header {
+                height: 80px;
+                background-color: #ccc;
+                color:#fff;
+                border-bottom: 1px solid #aaa;
+                border-top: 1px solid #aaa;
+                font-size: 20px;
+                padding:15px;
+            }
+
+            header.is-active {
+                background-color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-hd">
+            <h1>jQuery Sticky Content</h1>
+        </div>
+
+        <header>
+            My header menu
+        </header>
+
+        <div class="page-bd">
+            <p>
+                
+            </p>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="jquery-sticky.js"></script>
+        <script>
+            (function(){
+                $('header').sticky({
+                    stickyClass: 'sticky',
+                    anchorClass: 'sticky-anchor'
+                });
+            }());
+        </script>
+    </body>
+</html>
