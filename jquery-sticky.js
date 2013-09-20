@@ -1,3 +1,18 @@
+/* 
+ *   jQuery Sticky Plugin 1.0
+ *   https://github.com/garethdn/jquery-sticky
+ *
+ *   Copyright 2013, Bruno Tarmann & Gareth Nolan
+ *   http://tarmann.com.br
+ *   http://ie.linkedin.com/in/garethnolan/
+
+ *   Based on jQuery Boilerplate by Zeno Rocha with the help of Addy Osmani
+ *   http://jqueryboilerplate.com
+ *
+ *   Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/MIT
+ */
+
 ;(function ( $, window, document, undefined ) {
 
 	var pluginName = "sticky";
