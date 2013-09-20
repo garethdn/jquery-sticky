@@ -1,6 +1,3 @@
-jQuery Sticky Plugin
-=====================
-
 # jQuery Sticky Plugin
 
 A jQuery plugin to easily add functionality to fix elements to the top of the page on scroll.
