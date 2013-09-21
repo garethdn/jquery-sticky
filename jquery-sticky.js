@@ -1,5 +1,5 @@
 /* 
- *   jQuery Sticky Plugin 1.0.0
+ *   jQuery Sticky Plugin 1.0.1
  *   https://github.com/garethdn/jquery-sticky
  *
  *   Copyright 2013, Bruno Tarmann & Gareth Nolan
@@ -19,7 +19,8 @@
 	var defaults = {
 		stickyClass: 'sdui-sticky-content',
         anchorClass: 'sdui-sticky-content-anchor',
-        activeClass: 'is-active'
+        activeClass: 'is-active',
+        buffer: 0
 	};
 
 	function Plugin ( element, options ) {
@@ -58,7 +59,7 @@
 			var scrollTop = $(window).scrollTop(),
 	            elementAnchorTop = this.elementAnchor.offset().top;
 
-	        if (scrollTop > elementAnchorTop) {
+	        if ( (scrollTop + this.settings.buffer) > elementAnchorTop ) {
 	            this.fixElement()
 	        } else {
 	            this.releaseElement();
@@ -68,7 +69,7 @@
 		fixElement: function () {
 			$(this.element).css({ 
             	position: 'fixed',
-            	top: '0px',
+            	top: this.settings.buffer + 'px',
             	'z-index': 1000,
             	'width': this.elementWidth
             }).addClass(this.settings.activeClass);

@@ -42,6 +42,14 @@ Set the class that will be added to the element when it is fixed to the top of t
 activeClass: 'active'
 ```
 
+#### buffer (number)
+
+Option to add a buffer to the top of the sticky element in the form of a number representing the size of the buffer in pixels.
+
+```js
+buffer: 20
+```
+
 ### TODO
 
 * If the height of the sticky element is changed (for example when active) the anchor retains the original height
